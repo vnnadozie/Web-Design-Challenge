@@ -1,4 +1,11 @@
 # Web-Design-Challenge
+
+Observations :
+From the weather data for 500+ cities collected, I conclude that max temperature is higher near the equator.
+There is no obvious dependence of cloudiness on latitude.
+The humidity percentage has only weak dependence on the latitude.
+There is no obvious dependence of wind speed on latitude. The wind speed in general is from 0 mph to 15 mph.
+
 ## Background
 Data becomes more powerful when you share it with others! That’s because people can use your data only if they can access it. So, you’ll use HTML and CSS to create a dashboard featuring the Latitude vs. X analysis of weather.
 
