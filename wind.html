@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<!-- Insert title here -->
+  <title>City Latitude vs Windspeed</title>
+  
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- A black horizontal navbar that becomes vertical on small screens -->
+  <nav class="navbar navbar-expand-sm navbar-blue">
+    <a class="nav-link" href="index.html">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+    </a>
+    <ul class="navbar-nav">
+        <!-- Home button -->
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html">  
+            Weather and Latitude</a>
+        </li>
+    </ul>
+
+    <!-- right side of navbar -->
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown ml-auto">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" href="#" role="button" 
+            aria-haspopup="true" aria-expanded="false">Plot</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="temp.html">Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="wind.html">Wind Speed </a>
+            </div>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+        </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div style="background-color:#4aaaa5;">
+    <div class='row'>
+        <div class="col-md-12">
+            </br>
+            </br>
+        </div>
+    </div>
+  </div> <!-- ends background div-->
+
+    <!-- Header -->
+<div class="container-fluid">
+    <div class='row align-items-center'>
+        <div class="col-md-4">
+            </br>
+            </br>
+        </div>
+        <div class="col-lg-7">
+            <h1 class="intro">Windspeed and Latitude</h1>
+            </br>
+            </br>
+        </div>
+        <div class="col-md-1">
+            </br>
+            </br>
+        </div>
+    </div> 
+    
+    <div class="row">
+        <div class="col-lg-6">
+            </br>
+            <a target="_blank" href="assets/images/Fig4.png">
+                <img src="assets/images/Fig4.png"
+                alt = "Windspeed vs. Latitude" height="600" width="800">
+            </a>
+        </div>
+        <div class="col-lg-6">
+            <p class="description">Looking at the graph it seems that there is no strong relation between windspeed and latitude.
+              Most cities have windspeeds less than 15mph however maximum windspeed increases in cities nearer to the poles.
+            </p>
+        </div>
+    </div>
+</div> <!-- ends main content container after gold div bar -->  
+
+    <!-- Visualizations -->
+        <!-- Header -->
+    <div id = "bottom_visual_page" class="container"> 
+          <div class="row">
+              <div class="col-md-12">
+                  </br> <!-- line break to push header down -->
+              </div>
+          </div>
+          <hr> <!-- horizontal line -->
+
+          <!-- Header content for visualization section -->
+        <div id = "bottom_visual_page" class="container"> 
+          <div class="row align-items-center">
+              <div class = 'col-md-4'></br></br></br></div>
+              <div class="col-lg-4">
+                  <h3 id="bot_header">Graphic Visualizations</h3>
+              </div>
+              <div class = 'col-md-4'></br></br></br></div>
+          </div>
+  
+          <div class="row align-items-center">
+            <div class="col-lg-3">
+                <a href="temp.html">
+                    <img src="assets/images/Fig1.png"
+                    alt = "Maximum Temperature vs. Latitude" height="225" width="300">
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="humidity.html">
+                    <img src="assets/images/Fig2.png"
+                    alt = "Humidity vs. Latitude" height="225" width="300">
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="cloudiness.html">
+                    <img src="assets/images/Fig3.png"
+                    alt = "Cloudiness vs. Latitude" height="225" width="300">
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="wind.html">
+                    <img src="assets/images/Fig4.png"
+                    alt = "Windspeed vs. Latitude" height="225" width="300">
+                </a>
+            </div>
+        </div>
+        <hr>
+      </div>
+  
+
+
+</body>
+</html>
